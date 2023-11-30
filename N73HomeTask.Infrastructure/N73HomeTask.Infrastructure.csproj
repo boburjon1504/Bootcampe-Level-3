@@ -12,12 +12,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Common\Identity\" />
-      <Folder Include="Common\Notifications\" />
-      <Folder Include="Common\Validators\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <PackageReference Include="AutoMapper" Version="12.0.1" />
       <PackageReference Include="FluentValidation" Version="11.8.1" />
     </ItemGroup>

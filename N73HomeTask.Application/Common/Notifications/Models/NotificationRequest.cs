@@ -2,7 +2,7 @@
 
 namespace N73HomeTask.Application.Common.Notifications.Models;
 
-public abstract class NotificationRequest
+public class NotificationRequest
 {
     public Guid? SenderUserId { get; set; } = null;
  

@@ -3,7 +3,7 @@
 public enum NotificationTemplateType
 {
     Welcoming = 0,
-    EmailAddressVerifcation = 1,
-    PhoneNumbderVerification = 2,
+    EmailAddressVerification = 1,
+    PhoneNumberVerification = 2,
     Referral = 3
 }

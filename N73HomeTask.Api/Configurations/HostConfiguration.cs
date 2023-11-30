@@ -5,12 +5,21 @@ public static partial class HostConfiguration
     public static ValueTask<WebApplicationBuilder> ConfigureAsync(this WebApplicationBuilder builder)
     {
         builder
-            .AddPersistense();
+            .AddMappers()
+            .AddValidators()
+            .AddIdentityInfrastructure()
+            .AddNotificationInfrastructure()
+            .AddExposers()
+            .AddDevTools();
+
         return new(builder);
     }
 
-    public static ValueTask<WebApplication> ConfigureAsync(this WebApplication app)
+    public static async ValueTask<WebApplication> ConfigureAsync(this WebApplication app)
     {
-        return new(app);
+        await app.SeedDataAsync();
+        app.UseExposers().UseDevTools();
+
+        return app;
     }
 }
