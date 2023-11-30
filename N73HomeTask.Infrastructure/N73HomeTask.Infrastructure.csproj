@@ -6,4 +6,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\N73HomeTask.Application\N73HomeTask.Application.csproj" />
+      <ProjectReference Include="..\N73HomeTask.Persistense\N73HomeTask.Persistense.csproj" />
+    </ItemGroup>
+
 </Project>

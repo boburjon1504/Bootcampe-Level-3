@@ -1,6 +1,0 @@
-@N73HomeTask.Api_HostAddress = http://localhost:5003
-
-GET {{N73HomeTask.Api_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

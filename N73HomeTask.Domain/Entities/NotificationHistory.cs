@@ -3,7 +3,7 @@ using N73HomeTask.Domain.Enums;
 
 namespace N73HomeTask.Domain.Entities;
 
-public class NotificationHistory : IEntity
+public abstract class NotificationHistory : IEntity
 {
     public Guid Id { get; set; }
     public Guid TemplateId { get; set; }
