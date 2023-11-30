@@ -1,8 +1,9 @@
-﻿using N73HomeTask.Domain.Enums;
+﻿using N73HomeTask.Domain.Common.Entities;
+using N73HomeTask.Domain.Enums;
 
 namespace N73HomeTask.Domain.Entities;
 
-public class User
+public class User : IEntity
 {
     public Guid Id { get; set; }
 
