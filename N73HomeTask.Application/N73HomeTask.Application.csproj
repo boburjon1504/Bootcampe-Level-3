@@ -6,4 +6,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\N73HomeTask.Domain\N73HomeTask.Domain.csproj" />
+    </ItemGroup>
+
 </Project>
