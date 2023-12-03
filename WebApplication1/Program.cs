@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(o=>o
     .UseNpgsql("Host=localhost;Port=5432;Database=IncludePracitce;Username=postgres;Password=boburjon6767"));
 
-
+// builder.Services
 builder.Services.AddSwaggerGen();
 builder.Services.AddEndpointsApiExplorer();
 var app = builder.Build();
